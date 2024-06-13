@@ -1,7 +1,5 @@
-# DESAFIO 7
+# DESAFIO 8
 
 # Marcelo Gustavo Scervino-985452
 
 # GITHUB: https://github.com/mscervino/marcelo-scervino-desafio-8
-
-## NOTA: previo a la resolución de cada ejercicio esta el enunciado. Los ejercicios y los enunciados estan comentados.
