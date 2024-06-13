@@ -99,3 +99,41 @@ if (isNaN(precioOriginal2) || isNaN(porcentajeDescuento2)) {
       calcularPrecioFinal2(precioOriginal2, porcentajeDescuento2)
   );
 }
+
+/* 5. Función para Calcular Área: Crea una función que reciba el radio de un círculo y devuelva su área.*/
+
+function calcularAreaCirculo(radio) {
+  return Math.PI * Math.pow(radio, 2);
+}
+
+let radio = prompt("Por favor, ingresa el radio del círculo:");
+
+radio = Number(radio);
+
+if (isNaN(radio) || radio <= 0) {
+  console.log("Por favor, ingresa un valor válido para el radio.");
+} else {
+  let area = calcularAreaCirculo(radio);
+  console.log(
+    "El área del círculo con radio " + radio + " es: " + area.toFixed(2)
+  );
+}
+
+/* 6. Función para Convertir Temperatura: Crea una función que convierta de Celsius a Fahrenheit. */
+
+function convertirCelsiusAFahrenheit(celsius) {
+  return (celsius * 9) / 5 + 32;
+}
+
+let celsius = prompt("Por favor, ingresa la temperatura en Celsius:");
+
+celsius = Number(celsius);
+
+if (isNaN(celsius)) {
+  console.log(
+    "Por favor, ingresa un valor válido para la temperatura en Celsius."
+  );
+} else {
+  let fahrenheit = convertirCelsiusAFahrenheit(celsius);
+  console.log(celsius + "°C es igual a " + fahrenheit.toFixed(2) + "°F");
+}
