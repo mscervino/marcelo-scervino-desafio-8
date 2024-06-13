@@ -137,3 +137,28 @@ if (isNaN(celsius)) {
   let fahrenheit = convertirCelsiusAFahrenheit(celsius);
   console.log(celsius + "°C es igual a " + fahrenheit.toFixed(2) + "°F");
 }
+
+/* 7. Bucle for: Utiliza un bucle for para imprimir los números del 1 al 10.*/
+
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+/* 8. Bucle while: Utiliza un bucle while para pedir al usuario números hasta que ingrese un número negativo. */
+
+let numeroa = 0;
+
+while (numeroa >= 0) {
+  numeroa = prompt(
+    "Por favor, ingresa un número (ingresa un número negativo para salir):"
+  );
+  numeroa = Number(numeroa);
+
+  if (isNaN(numeroa)) {
+    console.log("Por favor, ingresa un valor válido.");
+  } else if (numeroa >= 0) {
+    console.log("Ingresaste el número: " + numeroa);
+  }
+}
+
+console.log("Has ingresado un número negativo. El bucle ha terminado.");
