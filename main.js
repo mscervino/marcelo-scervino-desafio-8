@@ -162,3 +162,32 @@ while (numeroa >= 0) {
 }
 
 console.log("Has ingresado un número negativo. El bucle ha terminado.");
+
+/* 9. Tabla de Multiplicar: Pide al usuario un número y muestra su tabla de multiplicar del 1 al 10. */
+
+let numero4 = prompt(
+  "Por favor, ingresa un número para ver su tabla de multiplicar:"
+);
+
+numero4 = Number(numero4);
+
+if (isNaN(numero4)) {
+  console.log("Por favor, ingresa un valor válido.");
+} else {
+  console.log("Tabla de multiplicar del " + numero4 + ":");
+  for (let i = 1; i <= 10; i++) {
+    console.log(numero4 + " x " + i + " = " + numero4 * i);
+  }
+}
+
+/* 10. Suma de Números Pares: Calcula la suma de los números pares del 1 al 100. */
+
+let sumaPares = 0;
+
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 === 0) {
+    sumaPares += i;
+  }
+}
+
+console.log("La suma de los números pares del 1 al 100 es:", sumaPares);
