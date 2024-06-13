@@ -191,3 +191,59 @@ for (let i = 1; i <= 100; i++) {
 }
 
 console.log("La suma de los números pares del 1 al 100 es:", sumaPares);
+
+/* 11. Objeto Persona: Crea un objeto persona con propiedades como nombre, edad, ciudad y un método presentarse() que muestre un mensaje de presentación.*/
+
+let persona = {
+  nombre: "Marcelo",
+  edad: 59,
+  ciudad: "Buenos Aires",
+  presentarse: function () {
+    return (
+      "Hola, soy " +
+      this.nombre +
+      ", tengo " +
+      this.edad +
+      " años y vivo en " +
+      this.ciudad +
+      "."
+    );
+  },
+};
+
+console.log(persona.presentarse());
+
+/* 12. Array de Objetos: Crea un array de objetos persona y utiliza un bucle para mostrar la información de cada persona.*/
+
+let personas = [
+  { nombre: "Marcelo", edad: 59, ciudad: "Buenos Aires" },
+  { nombre: "Carlos", edad: 35, ciudad: "Miami" },
+  { nombre: "Laura", edad: 28, ciudad: "Rio de Janeiro" },
+];
+
+for (let i = 0; i < personas.length; i++) {
+  let persona = personas[i];
+  console.log("Persona " + (i + 1) + ":");
+  console.log("Nombre: " + persona.nombre);
+  console.log("Edad: " + persona.edad);
+  console.log("Ciudad6: " + persona.ciudad);
+  console.log("---------------------");
+}
+
+/* 13. Función para Calcular Promedio: Crea una función que reciba un array de números y devuelva su promedio.*/
+
+function calcularPromedio(numeros) {
+  if (numeros.length === 0) {
+    return 0;
+  }
+
+  let suma = numeros.reduce((total, num) => total + num, 0);
+
+  let promedio = suma / numeros.length;
+
+  return promedio;
+}
+
+let arrayNumeros = [10, 20, 30, 40, 50];
+let promedio = calcularPromedio(arrayNumeros);
+console.log("El promedio de los números es:", promedio);
